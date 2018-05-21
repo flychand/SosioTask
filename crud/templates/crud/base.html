@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'crud/css/bootstrap.css' %}"/>
+    </head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+           <h3> Task given by Sosio</h3>
+        </div>
+        <div class="col-md-12" style="text-align: center;">
+            <button type="submit" class="btn btn-sm btn-primary"><span class="glyphicon glyphicon-plus"></span> Split Bills</button> 
+         </div>
+    </nav>
+    <div class="col-md-6"></div>
+    <div class="col-md-12 well">
+        <h class="text-primary">Python - Simple monthly expenses</h4>
+        <hr style="border-top:1px dotted #000;"/>
+        {% block body %}
+        {% endblock %}
+    </div>
+
+</body>
+</html>
